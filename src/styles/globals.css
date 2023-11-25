@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  button{
+    @apply bg-zinc-400 px-2 py-1 rounded-lg font-medium tracking-tight
+  }
+}
+
+@layer components{
+  .btnPrimary{
+    @apply bg-slate-950 text-white
+  }
+
+  .btnSecondary{
+    @apply bg-amber-600 text-white
+  }
+
+  .btnDanger{
+    @apply bg-rose-600 text-white
+  }
+
+  .darkMode {
+    @apply bg-zinc-950
+  }
+  .darkMode .title-app{
+    @apply text-white
+  }
+
+  .container{
+    @apply m-auto p-4 space-y-10 xl:max-w-full
+  }
+}
